@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- build:css css/index.css -->
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Open-Iconic -->
+    <link rel="stylesheet" href="/node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    <!-- endbuild -->
+
+    <title>Hoteles Panamá</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">Hoteles Panamá</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./about.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="./precios.html">Precios</a></li>
+          <li class="nav-item"><a class="nav-link" href="./terminos_condiciones.html">Términos y condiciones</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contacto.html">Contactos</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="jumbotron">
+      <h1 class="text-center">Hoteles Panamá</h1>
+    </div>
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active" aria-current="page">Home</li>
+        </ol>
+      </nav>
+
+      <!--COLLAPSE-->
+      <div class="row">
+        <div class="col-sm-4">
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#funciona" aria-controls="multiCollapse1">¿Cuánto cuesta un hotel en Ciudad de Panamá?</button>
+        </div>
+        <div class="col-sm-4">
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#reserva" aria-controls="multiCollapse2">¿Cuándo reservar un hotel en Ciudad de Panamá?</button>
+        </div>
+        <div class="col-sm-4">
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pago" aria-controls="multiCollapse3">¿Donde hospedarse en Ciudad de Panamá?</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4 collapse multi-collapse" id="funciona">
+          <p>
+            <h3>¿Cuánto cuesta un hotel en Ciudad de Panamá?</h3>
+            <p>Los mejores precios en la ciudad de Panamá</p>
+          </p>
+        </div>
+        <div class="col-sm-4 collapse multi-collapse" id="reserva">
+          <p>
+            <h3>¿Cuándo reservar un hotel en Ciudad de Panamá?</h3>
+            <p>La mejor oportunidad para reservar hotel</p>
+          </p>
+        </div>
+        <div class="col-sm-4 collapse multi-collapse" id="pago">
+          <p>
+            <h3>¿Donde hospedarse en Ciudad de Panamá?</h3>
+            <p>Los mejores lugares para su comodidad y beneficios</p>
+          </p>
+        </div>
+      </div>
+      <!---->
+
+      <hr>
+
+      <!--CAROUSEL-->
+      <div id="carouselControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="img/carou1.jpg" alt="Primer Slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/carou2.jpg" alt="Segundo Slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/carou3.jpg" alt="Tercer Slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/carou4.jpg" alt="Cuarto Slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Siguiente</span>
+        </a>
+      </div>
+      <!---->
+
+      <hr>
+
+      <img class="img-fluid" src="img/panamabanner.jpg" alt="responsive img" style="min-width: 100%">
+      <div class="d-flex flex-wrap flex-row-reverse">
+        <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+          <div class="card-header">
+            Ciudad de Panamá
+          </div>
+          <div class="card-body">
+              <img class="card-img-top" src="img/hyatt.jpg" alt="hotel img"></img>
+              <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Incluye desayuno, almuerzo y cena">Hyatt Place Panamá</h5>
+              <p class="card-text">El mejor hotel de Panamá</p>
+              <button type="button" id="contactoBtnH" class="btn btn-outline-dark" data-toggle="modal" data-target="#contacto"> Contacto</button>
+          </div>
+          <div>
+              <button class="btn btn-outline-dark btn-reserva" data-toggle="popover" title="Promociones" data-content="Consultar las promociones"><span class="oi oi-plus"></span> ELEGIR</button>
+          </div>
+        </div>
+        <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+          <div class="card-body">
+              <img class="card-img-top" src="img/marriot.jfif" alt="hotel img"></img>
+              <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Incluye desayuno, almuerzo y cena">JW Marriott Panamá</h5>
+              <h6 class="text-muted">Ciudad de Panamá</h6>
+              <p>El mejor hotel de Panamá</p>
+              <button type="button" id="contactoBtnJ" class="btn btn-outline-dark" data-toggle="modal" data-target="#contacto"> Contacto</button>
+          </div>
+          <div>
+              <button class="btn btn-outline-dark btn-reserva" data-toggle="popover" title="Promociones" data-content="Consultar las promociones"><span class="oi oi-plus"></span> ELEGIR</button>
+          </div>
+        </div>
+        <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+          <div class="card-header">
+            Ciudad de Panamá
+          </div>
+          <div class="card-body">
+              <img class="card-img-top" src="img/wyndham.jpg" alt="hotel img"></img>
+              <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Incluye desayuno, almuerzo y cena">Wyndham Panamá Albrook Mall</h5>
+              <p>El mejor hotel de Panamá</p>
+              <button type="button" id="contactoBtnW" class="btn btn-outline-dark" data-toggle="modal" data-target="#contacto"> Contacto</button>
+          </div>
+          <div>
+              <button class="btn btn-outline-dark btn-reserva" data-toggle="popover" title="Promociones" data-content="Consultar las promociones"><span class="oi oi-plus"></span> ELEGIR</button>
+          </div>
+        </div>
+        <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+          <div class="card-body">
+              <img class="card-img-top" src="img/saba.jpg" alt="hotel img"></img>
+              <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Incluye desayuno, almuerzo y cena">The Saba Hotel</h5>
+              <h6 class="text-muted">Ciudad de Panamá</h6>
+              <p>El mejor hotel de Panamá</p>
+              <button type="button" id="contactoBtnS" class="btn btn-outline-dark" data-toggle="modal" data-target="#contacto"> Contacto</button>
+          </div>
+          <div>
+              <button class="btn btn-outline-dark btn-reserva" data-toggle="popover" title="Promociones" data-content="Consultar las promociones"><span class="oi oi-plus"></span> ELEGIR</button>
+          </div>
+        </div>
+        <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+          <div class="card-header">
+            Ciudad de Panamá
+          </div>
+          <div class="card-body">
+              <img class="card-img-top" src="img/riu.jpg" alt="hotel img"></img>
+              <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Incluye desayuno, almuerzo y cena">Hotel Riu Plaza Panamá</h5>
+              <h6 class="text-muted">Ciudad de Panamá</h6>
+              <p>El mejor hotel de Panamá</p>
+              <button type="button" id="contactoBtnR" class="btn btn-outline-dark" data-toggle="modal" data-target="#contacto"> Contacto</button>
+          </div>
+          <div>
+              <button class="btn btn-outline-dark btn-reserva" data-toggle="popover" title="Promociones" data-content="Consultar las promociones"><span class="oi oi-plus"></span> ELEGIR</button>
+          </div>
+        </div>
+        <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+          <div class="card-body">
+              <img class="card-img-top" src="img/hardrock.jpg" alt="hotel img"></img>
+              <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Incluye desayuno, almuerzo y cena">Hard Rock Hotel Panamá</h5>
+              <h6 class="text-muted">Ciudad de Panamá</h6>
+              <p>El mejor hotel de Panamá</p>
+              <button type="button" id="contactoBtnHR" class="btn btn-outline-dark" data-toggle="modal" data-target="#contacto"> Contacto</button>
+          </div>
+          <div>
+              <button class="btn btn-outline-dark btn-reserva" data-toggle="popover" title="Promociones" data-content="Consultar las promociones"><span class="oi oi-plus"></span> ELEGIR</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Contactanos</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Nombre:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <label for="recipient-email" class="col-form-label">Email:</label>
+                <input type="text" class="form-control" id="recipient-email">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Mensaje:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-success">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="row">
+        <div class="col-sm-4 d-flex flex-column">
+          <a href="http://www.facebook.com">facebook</a>
+          <a href="http://www.twitter.com">Twitter</a>
+          <a href="http://www.instagram.com">Instagram</a>
+          <a href="http://www.google.com">Google+</a>
+        </div>
+        <div class="col-sm-4">
+          <address>
+            <h3>Oficina Central</h3>
+            <p><span class="oi oi-home footer-address-icon"></span>Ciudad de Panamá, Panamá</p>
+            <p><span class="oi oi-phone footer-address-icon"></span>+507123456</p>
+            <p><span class="oi oi-inbox footer-address-icon"></span>contacto@hotelespanama.com</p>
+          </address>
+        </div>
+        <div class="col-sm-4 d-flex flex-column align-items-end">
+          <a href="#">Nosotros</a>
+          <a href="#">Precios</a>
+          <a href="#">Términos y Condiciones</a>
+          <a href="#">Contacto</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- build:js js/main.js -->
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
